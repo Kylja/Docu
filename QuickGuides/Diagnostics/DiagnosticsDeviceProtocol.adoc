@@ -1,3 +1,4 @@
+:imagesdir: ./images
 = Creating a device protocol
 
 A device protocol is a text file which combines all available information about the configuration and actual status of the controller.
