@@ -1,4 +1,5 @@
 :experimental:
+:imagesdir: ./images
 = Fastbus Fiber Optics
 
 Its possible to monitor actual values of the optic transciever.
