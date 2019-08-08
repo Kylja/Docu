@@ -1,0 +1,27 @@
+:experimental:
+= Fastbus Fiber Optics
+
+Its possible to monitor actual values of the optic transciever.
+This may help when diagnosing problems.
+
+
+image::DiagnosticsFastbusFiberOptics.png[]
+<1> Select the fastbus module at menu:Online[Hardware]
+<2> Then in the Monitoring select menu:Service Variables[]
+<3> Another option is to use the Variables view and goto menu:MIO[Card number>SV]
+
+ 
+The TX and RX values are shown as percentage 0..100%
+
+The TX value is automatically determined by the module.
+The RX value can be interpreted as follows:
+ 
+[options="header",cols="1,1,1"]
+|===
+|RX value (%)   |Status   |Err Led Color   
+//----------------------
+|100 - 54   |Ok        |Green   
+|53 - 29    |Warning   |Orange   
+|< 28      |Error     |Red   
+|===
+

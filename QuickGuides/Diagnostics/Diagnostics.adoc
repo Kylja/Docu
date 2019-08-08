@@ -1,0 +1,7 @@
+= Diagnostics: Quickguide
+
+
+include::DiagnosticsDeviceProtocol.adoc[leveloffset=+1]
+
+include::DiagnosticsLogBooks.adoc[leveloffset=+1]
+

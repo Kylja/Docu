@@ -1,0 +1,19 @@
+= Creating a device protocol
+
+A device protocol is a text file which combines all available information about the configuration and actual status of the controller.
+
+
+
+To create a device protocol:
+
+image::DiagnosticsDeviceProtocol.png[] 
+
+<1> Right click on the online device 
+<2> Click "Create Device Protocol"
+<3> In the Popup Check all options for which you want to generate information
+<4> Select a file location to store the device protocol
+<5> Click finish
+
+After this the device protocol is available at the specified file location.
+
+NOTE: For older versions of SolutionCenter the actual screen may be slightly different compared to the screenshots but the principle is the same

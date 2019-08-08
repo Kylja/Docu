@@ -1,0 +1,61 @@
+:experimental:
+= Diagnostic Logbook
+
+All Errors, Warning and information event are stored in the Logbook.
+The Logbook is in Plain text and as a default stored on the nvram.
+
+At each Boot a New Logbook is created. Before this is done a backup is created: the Old Logbook.
+
+The Logbook can be seen here:
+
+image::DiagnosticsLogBooks.png[]
+
+<1> Select menu:Online Device[System>Diagnostics]
+<2> Select the monitoring tab image:SolutionCenterMonitorTab.png[]
+<3> select Logbook or Old Logbook tab
+
+There are 6 colums in the both logbooks
+
+[options="header",cols="1,2a"]
+|===
+|Column name   |Description   
+//----------------------
+|Entry   |Sequential, monotonic, number 
+|Type    |Event type. There are three different types:
+
+====
+I:: Information only event 
+W:: Warning, indicates a, temporary, non blocking problem 
+E:: Error, indicates a severe, probably blocking, problem 
+====
+   
+|Ticks   |Number of ticks since system start   
+|Task    |Module in which the event occured   
+|Date    |Date-time stamp of the event   
+|Text    |Description of the event      
+|===
+
+
+== Interpeting the Logbook entries
+
+The message text in the Logbook, for system messages, mostly has the following structure: 
+
+====
+XXXX_YYYY_ZZZZ [ ] : tttttt
+
+Examples:
+===== 
+GIO212_VALIDATE [Card 5]: The power dissipation budget is exceeded. +
+MOD_INIT: 'MOD' successfully started + 
+MBM_TCP_MAIN[NetNb 1]: Runtime >= IntervalTime![1034>1000 ticks)
+=====
+====
+
+Where:
+
+XXXX:: Is the abrivation of the module in which the event occured
+YYYY_ZZZZ:: Optional, Is the function within the module in which the event occured
+[]:: Optional, source address of event. (Card 1, ETH0, etc)
+tttt:: descriptive Text of the event
+
+ 
