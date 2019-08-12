@@ -9,7 +9,7 @@ This may help when diagnosing problems.
 image::DiagnosticsFastbusFiberOptics.png[]
 <1> Select the fastbus module at menu:Online[Hardware]
 <2> Then in the Monitoring select menu:Service Variables[]
-<3> Another option is to use the Variables view and goto menu:MIO[Card number>SV]
+<3> Another option is to use the Variables view and goto menu:MIO[Card number>Sv]
 
  
 The TX and RX values are shown as percentage 0..100%
