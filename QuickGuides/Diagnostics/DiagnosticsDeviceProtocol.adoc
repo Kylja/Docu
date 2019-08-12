@@ -13,7 +13,7 @@ image::DiagnosticsDeviceProtocol.png[]
 <2> Click "Create Device Protocol"
 <3> In the Popup Check all options for which you want to generate information
 <4> Select a file location to store the device protocol
-<5> Click finish
+<5> Click "Finish"
 
 After this the device protocol is available at the specified file location.
 
